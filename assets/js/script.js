@@ -30,5 +30,11 @@ const { createApp } = Vue;
                     }
                 ]
             }
+        },
+        methods: {
+            remove(index) {
+                console.log('Ho cliccato sulla x:', index);
+                this.tasks.splice(index, 1);
+            }
         }
     }).mount('#app');
