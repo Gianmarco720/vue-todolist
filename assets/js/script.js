@@ -59,6 +59,8 @@ createApp({
         },
         remove(index) {
             console.log('Ho cliccato sulla x:', index);
+
+            // rimuovo le task
             this.tasks.splice(index, 1);
         },
     }
