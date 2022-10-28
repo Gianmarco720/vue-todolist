@@ -3,11 +3,11 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            error: false,
             newTask: {
                 text: '',
                 done: false,
             },
-            error: false,
             tasks: [
                 {
                     text: 'Fare gli esercizi',
