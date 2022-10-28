@@ -29,7 +29,7 @@
             <!-- Creo un input e un bottone per aggiungere le cose da fare -->
             <div class="add_task">
                 <h3 class="my-3">Aggiungi cose da fare</h3>
-                <input type="text" v-model="newTask.text">
+                <input type="text" v-model="newTask.text" @keyup.enter="addTask">
                 <button class="mx-2 btn btn-success" @click.stop="addTask">Aggiungi</button>
                 <small class="text-danger" v-show="error">Devi inserire almeno 5 caratteri</small>
             </div>
