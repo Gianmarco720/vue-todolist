@@ -34,7 +34,7 @@
             <div class="task_list">
                 <h3 class="my-4">To Do</h3>
                 <ul>
-                    <li v-for="task in tasks">{{task.text}}</li>
+                    <li v-for="task in tasks" :class=" task.done === true ? 'text-decoration-line-through' : ''">{{task.text}}</li>
                 </ul>
             </div>
         </div>
