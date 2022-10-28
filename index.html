@@ -38,7 +38,7 @@
             <div class="task_list">
                 <h3 class="my-4">To Do</h3>
                 <ul>
-                    <li class="pb-3" v-for="(task, index) in tasks" :class=" task.done === true ? 'text-decoration-line-through' : ''">{{task.text}} <i class="fa-solid fa-circle-xmark text-danger mx-3" @click.stop="remove(index)"></i></li>
+                    <li class="pb-3" v-for="(task, index) in tasks" :class=" task.done === true ? 'text-decoration-line-through' : '' ">{{task.text}} <i class="fa-solid fa-circle-xmark text-danger mx-3" @click.stop="remove(index)"></i></li>
                 </ul>
             </div>
         </div>
